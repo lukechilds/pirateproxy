@@ -27,7 +27,8 @@
   },
   "homepage": "https://github.com/lukechilds/pirateproxy",
   "dependencies": {
-    "got": "^6.7.1"
+    "got": "^6.7.1",
+    "replacestream": "^4.0.2"
   },
   "devDependencies": {
     "eslint-config-xo-lukechilds": "^1.0.0",
