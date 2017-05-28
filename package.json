@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
-    "test": "xo"
+    "test": "xo",
+    "deploy": "now --public -e NODE_ENV=production -e PROXY_HOST=thepiratebay.now.sh && now alias"
   },
   "xo": {
     "extends": "xo-lukechilds"
