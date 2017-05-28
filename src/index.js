@@ -1,7 +1,9 @@
+const url = require('url');
 const http = require('http');
 const got = require('got');
 const replaceStream = require('replacestream');
 
+const host = process.env.PROXY_HOST || (process.env.NOW_URL && url.parse(process.env.NOW_URL).host);
 const target = 'thepiratebay.org';
 
 http.createServer((req, res) => {
@@ -16,7 +18,7 @@ http.createServer((req, res) => {
 		});
 
 		if (origRes.headers['content-type'].includes('text')) {
-			stream = stream.pipe(replaceStream(target, req.headers.host));
+			stream = stream.pipe(replaceStream(target, host || req.headers.host));
 		}
 
 		stream.pipe(res);
