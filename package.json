@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/lukechilds/pirateproxy",
   "dependencies": {
-    "got": "^6.7.1",
+    "got": "^7.0.0",
     "replacestream": "^4.0.2"
   },
   "devDependencies": {
