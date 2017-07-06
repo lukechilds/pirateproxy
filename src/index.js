@@ -18,7 +18,7 @@ http.createServer((req, res) => {
 			}
 		});
 
-		if (origRes.headers['content-type'] === 'text/html') {
+		if (origRes.headers['content-type'] && origRes.headers['content-type'].includes('text/html')) {
 			stream = stream.pipe(replaceStream(target, host || req.headers.host));
 		}
 
