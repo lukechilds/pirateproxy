@@ -1,7 +1,5 @@
 # pirateproxy
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/lukechilds/pirateproxy.svg)](https://greenkeeper.io/)
-
 > Proxy site for thepiratebay.org
 
 [![Build Status](https://travis-ci.org/lukechilds/pirateproxy.svg?branch=master)](https://travis-ci.org/lukechilds/pirateproxy)
